@@ -29,7 +29,7 @@ const server = app.listen(process.env.PORT, () => {
 const io = new Server.Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: 'http://localhost:3000',
+    origin: 'https://snazzy-klepon-789a58.netlify.app/',
   },
 });
 io.on('connection', (socket) => {
