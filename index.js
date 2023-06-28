@@ -29,7 +29,7 @@ const server = app.listen(process.env.PORT, () => {
 const io = new Server.Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: 'https://chatapp-frontend-mu.vercel.app/',
+    origin: 'https://shimmering-sundae-debd9e.netlify.app/',
   },
 });
 io.on('connection', (socket) => {
